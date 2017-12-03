@@ -1,0 +1,56 @@
+{% load static %}
+
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet"> 
+<title>
+  MLH 2017 | Secret Santa App
+</title>
+      <link rel="stylesheet" type="text/css" href="{% static "MLH_secretSanta/santastyle.css" %}"/>
+</head>
+<body>
+
+  <form href="action-page.html">
+    
+    <div class="xmas">
+        <h1>
+            Your name:
+        <br>
+            <input type='text' name='firstname' placeholder='John'>
+        <br>
+    </div>
+    <br>
+    <div class="xmas">
+        <h1>
+            Elf names (separated by commas):<br>
+            <input type='text' name='lastname' placeholder='Thrasher'>
+
+        </h1>
+    </div>
+
+
+<br>
+        <h3>
+    <div class="xmas">
+            Phone numbers of your elves<br>(your number first, separate numbers with commas)<br>
+            <input type='text' name='numbers' placeholder='3055310303, etc'><br>
+        </h3>
+        
+    </div>
+        <br>
+    <div class="xmas2">
+        <h2>
+            <input type="radio" name="area" value="Local"> Local<br>
+            <input type="radio" name="area" value="Far"> Far<br>
+        <br>
+            <input type='submit' value='Organize Elves'>
+        <br>
+            <a href='/action-page.html'>Click to Submit Info</a>
+        </h2>
+    </div>
+    <br>
+
+  </form>
+
+</body>
+</html>
